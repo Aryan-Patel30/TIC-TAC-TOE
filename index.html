@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-tac-toe</title>
+    <style>
+
+        body{
+            background-color: rgb(148, 145, 148);
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .game{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          row-gap: 50px;
+         margin-top: 30px;
+        }
+
+        .stro{
+        display: grid;
+        grid-template-columns: 100px 100px 100px;
+        gap: 8px;
+      }
+
+      .btn{
+        height: 100px;
+        width: 100px;
+        border:none;
+        border-radius: 4px;
+        box-shadow:0 0 1rem rgba(40, 39, 39,0.4);
+        font-size: 74px;
+        color:black;
+        background-color: white;
+    }
+
+    .rst{
+        padding: 5px 20px;
+        border:none;
+        border-radius: 14px;
+        box-shadow:0 0 1rem rgba(239, 10, 10, 0.4);
+        font-size: 24px;
+        color: rgb(49, 210, 228);
+        background-color: rgb(57, 51, 51);
+        margin-bottom: 20px;
+    }
+    .msg{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        gap: 15px;
+    }
+    .msg p{
+         color: rgb(244, 244, 142);
+         font-size: 50px;
+    }
+    .msg button{
+        padding: 5px 20px;
+        border:none;
+        border-radius: 14px;
+        box-shadow:0 0 1rem rgba(239, 10, 10, 0.4);
+        font-size: 24px;
+        color: rgb(49, 210, 228);
+        background-color: rgb(57, 51, 51);
+        margin-bottom: 35px;
+    }
+    .hide{
+        display: none;
+    }
+    
+
+
+    </style>
+</head>
+
+<body>
+    
+        <div class="msg hide">
+            <p class="wms">Winner</p>
+            <button class="nst">new Game</button>
+        </div>
+        
+        <main class="game">
+        <h1>Tic-Tac-Toe</h1>
+        <div class="stro">
+            <button class="btn"></button>
+            <button class="btn"></button>
+            <button class="btn"></button>
+            <button class="btn"></button>
+            <button class="btn"></button>
+            <button class="btn"></button>
+            <button class="btn"></button>
+            <button class="btn"></button>
+            <button class="btn"></button>
+        </div>
+        <button class="rst">Reset Game</button>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
